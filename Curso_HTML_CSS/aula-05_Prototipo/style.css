@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+:root{
+    --cor-fundo:rgb(65, 6, 38);
+    --cor-hover:rgb(182, 28, 113);
+    --cor-primaria: rgb(253, 253, 253);
+    --cor-secudaria: rgb(211, 115, 168);
+    --cor-form:rgb(243, 203, 225);
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0px;
+    background-color: var(--cor-fundo);
+    position: 100%; 
+    width: 100%;
+  
+    
+}
+
+.menu ul li{
+    display: inline;
+    position: relative;
+    width: 100%;
+    
+}
+
+.menu ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    
+    
+}
+
+.menu ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*Sub menu*/
+.menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.menu ul ul{
+    width: 150px;
+}
+.menu ul ul li a{
+    display: block;
+    font-size: 20px;
+}
+
+.menu .contato ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    
+}
+.menu .contato ul li:hover ul{
+    display: block;
+}
+.menu .contato ul ul{
+    width: 150px;
+    
+}
+.menu .contato ul ul li a{
+    display: block;
+    font-size: 20px;
+   
+    
+}
+
+header{
+    display: flex;    
+    background-color: var(--cor-secudaria);
+    color: var(--cor-primaria);
+    padding: 0px;
+}
+header img{
+    width: auto;
+    height: 100px;
+    background-position: center;
+}
+header h1{
+    position: absolute;
+    left: 31%;
+    font-size: 35px;
+   
+}
+header h2{
+    position: absolute;
+    left: 27%;
+    top: 50px;
+    font-size: 30px;
+}
+header h4{
+    position: absolute;
+    right: 20px;
+}
+
+#foto_principal{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    height: auto;
+    width: auto;
+    
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    color:var(--cor-primaria);
+    background-color: var(--cor-secudaria);
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+div #form-contato{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 500px;
+    margin: auto auto 0 auto;  
+   
+}
+
+div #form-contato input{
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    height: 35px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+div #form-contato textarea{
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    height: 100px;
+    background-color: white;
+    opacity: 0.5;
+    padding: 6px;
+}
+
+div #form-contato button{
+    background-color: var(--cor-fundo);
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    height: 35px;
+   color: var(--cor-primaria);
+    opacity: 0.5;
+}
+
+h2{
+    text-align: center;
+}
+
+#contato{
+    background-color: var(--cor-form);
+}
+
+#serv_prestados ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    position: 100%;
+  
+    
+}
+
+#serv_prestados ul li{
+    display: grid;
+    position: relative;
+    
+}
+
+#serv_prestados ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    
+    
+}
+#servicos_home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#servicos_home div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#fotos{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#fotos h2{
+    margin-bottom: 20px;
+}
+
+#fotos img{
+    display: inline-block;
+    padding: 10px;
+    height: 200px;
+    width: auto;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: column wrap;        
+        width: 100%;
+    }
+
+    header{
+        height: 60vh;
+        justify-content: center;
+    }
+    h1 h2 h4{       
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        width: 100%;
+
+        
+        
+    }
+
+    
+}

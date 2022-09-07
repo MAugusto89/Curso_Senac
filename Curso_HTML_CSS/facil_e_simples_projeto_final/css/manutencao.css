@@ -1,0 +1,203 @@
+:root{
+    --cor-fundo: rgb(34,41,37);
+    --cor-hover: rgb(0, 197, 154);
+    --cor-primária:  rgb(255, 255, 255);
+    --cor-secundaria: rgb(21, 173, 21);
+    --cor-form: rgb(255, 170, 217);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: var(--cor-secundaria);
+}
+
+/*Topo*/
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primária);
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+header h1{
+    padding: 5px;
+    font-size: 50px;
+}
+header h4{
+    font-size: 25px;
+}
+#icone-perfil{
+    position: absolute;
+    right: 25px;
+    height: 50px;
+    width: 50px;
+    
+}
+
+/*Menu*/
+
+.menu{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul{
+    list-style-type: none;
+    background-color: var(--cor-fundo);
+}
+
+.menu ul li{
+    position: relative;
+    display: inline;
+
+}
+
+.menu ul li a {
+    color: var(--cor-primária);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.menu ul li a:hover{
+    background-color: var(--cor-secundaria);
+    border-radius: 30px;
+}
+
+
+/*Manutenção*/
+div #form-manutencao{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 500px;
+    margin: auto auto 0 auto;  
+   
+}
+
+div #form-manutencao input{
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    height: 35px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+div #form-manutencao textarea{
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    height: 100px;
+    background-color: white;
+    opacity: 0.5;
+    padding: 6px;
+}
+
+div #form-manutencao button{
+    background-color: var(--cor-fundo);
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    height: 40px;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#periodo{
+    margin:1px;
+}
+#cidade{
+    margin:1px;
+}
+::-webkit-input-placeholder{
+    font-size: 15px;
+}
+div #form-manutencao button:hover{
+    background-color: white;
+    color: gray;
+}
+
+h2{
+    text-align: center;
+}
+
+/*Rodapé*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: var(--cor-primária);
+    background-color: var(--cor-fundo);
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor-primária);
+}
+footer fieldset{
+    
+    display: flex;
+    text-align:center;
+}
+
+footer .fieldset{
+    margin: auto;
+    border: 2px groove black !important;
+    justify-content:center;
+    width: 25%;
+    align-items: center;
+}
+footer .fieldset #legend{
+    font-size: 0.8rem !important;
+    text-align: center !important;
+    border-bottom: none;
+}
+footer .fieldset img{
+    cursor: pointer;
+    margin: 20px;
+    height: 30px;
+    background-size: cover;
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: column wrap;        
+        width: 100%;
+    }
+
+    header{
+        height: 60vh;
+        justify-content: center;
+    }
+    h1 h2 h4{       
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        width: 100%;   
+    }   
+}

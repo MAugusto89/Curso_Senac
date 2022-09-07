@@ -1,0 +1,255 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.botao{
+    background-color:rgb(8, 3, 78);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    height: 55px;
+    width: 400px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 30px;
+    border: 1.2px solid white;
+    font-size: 20pt;
+    text-align: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(9, 38, 172);
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+}
+nav ul li{
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+/*Cabeçalho*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("img/hotel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    height: 600px;
+    height: 74vh;
+}
+header h1 {
+    color: white;
+    background-color: rgba(0, 0, 255, 0.507);
+    left: center;
+}
+header p{
+    margin-bottom: 2em;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: rgb(9, 38, 172);
+    color: white;
+    font-size: 20pt;
+}
+
+#sobre h2{
+    padding-top: 10px;
+    color: white;
+}
+#sobre p{
+    max-width: 1200px;
+}
+
+#orcamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: url("img/sacada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 20px;
+}
+
+#orcamento h2{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+#orcamento div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#orcamento div table{
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+#contato{
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(9, 38, 172);
+    color: white;
+}
+
+#contato h2{
+    color: white;
+}
+
+#contato div{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: inline-block;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+#contato a{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Formulário pedido*/
+#form_pedido{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/recepcao-hotel-fusion-hplus-em-brasilia-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+input{
+    height: 55px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 1.2px solid white;
+    font-size: 18px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.9;
+    outline: none;
+    align-items: center;
+    
+}
+
+#corpo_form{
+    background-color: rgb(9, 38, 172);
+    opacity: 0.8;
+    width: 500px;
+    margin: 10px auto 0 auto;
+    font-size: 20px;
+    border-radius: 32px;
+    border: 2px solid white;
+}
+
+#corpo_form h1{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.campo{
+    align-items: flex-start;
+
+}
+
+#reserva input{
+    background-color: rgb(87, 0, 226);
+}
+
+#orcamento2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-image: url("img/piscina-vista.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 20px;
+}
+
+#orcamento2 h2{
+    color: black;
+    text-align: center;
+    width: 102%;
+    border-radius: 30px;
+    padding: 9px;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+#orcamento2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#orcamento2 div table{
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FÁCIL & SIMPLES</title>
+    <link rel="stylesheet" href="/css/manutencao.css">
+</head>
+<body>
+    <header>
+        <h1 id="topo">FÁCIL & SIMPLES</h1>
+        <h3 id="sub">Instalações e Segurança</h3>
+        <img src="/icon/usuario-de-perfil.png" alt="icone-perfil" id="icone-perfil" onclick="redirect()">
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Manutenção</a></li>
+            <li><a href="publicacao.html">Atualizações</a></li>
+            <li><a href="sobre.html">Quem Somos</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <form action="." method="POST" id="form-manutencao">
+            <label>Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome." required="required">
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required="required"><br>
+
+            <div id="cidade">
+                <label>Cidade</label><br>
+                <input type="radio" name="aquidauana">
+                <label>Aquidauana</label>
+                <input type="radio" name="aquidauana">
+                <label>Anastácio</label>
+                <input type="radio" name="aquidauana">
+                <label>Outro</label>
+            </div><br>
+        
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço com o número da casa" required="required">
+            <label>Complemento</label>
+            <input type="text" name="complemento" id="complemento" placeholder="Digite algum complemento" required="required"><br>
+
+            <div id="periodo">
+                <label>Melhor Período para instalação</label><br>
+                <label for="matutino">Manhã</label>
+                <input type="radio" name="m" id="Matutino" class="custom-radio-btn">
+                <label for="vespertino">Tarde</label>
+                <input type="radio" name="m" id="Vespertino" class="custom-radio-btn">
+                <label for="outro">Outro</label>
+                <input type="radio" name="m" id="Outro" class="custom-radio-btn">
+                <!--<input type="time" name="hora" id="hora">
+                <p>às</p>
+                <input type="time" name="hora2" id="hora2">-->
+            </div><br>
+        
+
+            <label>Mensagem</label>
+            <textarea name="textA" id="textA" cols="50" rows="10" placeholder="Digite aqui sua mensagem" required="required"></textarea>
+
+            <button type="submit" class="enviar" value="Enviar">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <fieldset class="fieldset">
+            <legend id="legend">NOSSOS CANAIS DE COMUNICAÇÃO</legend>
+            <img src="/icon/facebook.png" alt="facebook_logo">
+            <img src="/icon/whatsapp-business.png" alt="whatsapp-business-logo">
+            <img src="/icon/pagina_face_logo.png" alt="pagina_face_logo">
+            <img src="/icon/gmail-logo-16.png" alt="gmail-logo">
+        </fieldset>
+        <a href="#topo">Voltar Topo</a>
+        <p>Desenvolvido por Gama.Com</p>
+    </footer>
+</body>
+</html>

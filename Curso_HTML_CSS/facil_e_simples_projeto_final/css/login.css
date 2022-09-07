@@ -1,0 +1,122 @@
+:root{
+    --cor-fundo: rgb(34,41,37);
+    --cor-hover: rgb(0, 197, 154);
+    --cor-primária:  rgb(255, 255, 255);
+    --cor-secundaria: rgb(21, 173, 21);
+    --cor-form: rgb(255, 170, 217);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*Topo*/
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primária);
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+header h1{
+    padding: 5px;
+    font-size: 50px;
+}
+header h4{
+    font-size: 25px;
+}
+
+/*Login*/
+#login html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    text-align: center;
+    border-radius: 12px;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+.box input[type="text"], .box input[type="password"], .box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor:text;
+    font-size: 1em;
+}
+.box input[type="submit"]{
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background: #275fcf;
+}
+.box input[type="submit"]::before{
+    content: "";
+    background: black;
+    margin-top: -20px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: var(--cor-primária);
+    background-color: var(--cor-fundo);
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor-primária);
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: column wrap;        
+        width: 100%;
+    }
+
+    header{
+        height: 60vh;
+        justify-content: center;
+    }
+    h1 h2 h4{       
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        width: 100%;   
+    }   
+}

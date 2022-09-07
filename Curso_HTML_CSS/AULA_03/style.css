@@ -1,0 +1,35 @@
+table, th, td{
+    border: 1px solid blue;
+}
+
+table{
+    width: 100%;
+}
+
+#na{
+    width: 10px;
+    background-color: maroon;
+    color: #ffff;
+    justify-content: center;
+}
+th{
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+#topo{
+    background-color: rgb(156, 153, 153);
+    text-align: center;
+    color: #ffff;
+}
+
+td{
+    font-size: 20px;
+    width: 50ch;
+    height: 50px;
+}
+#uC{
+    direction: rtl;
+}
